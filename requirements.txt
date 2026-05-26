@@ -4,3 +4,6 @@ pandas
 openpyxl
 jinja2
 python-multipart
+python-dotenv
+xlrd
+

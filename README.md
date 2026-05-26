@@ -52,6 +52,11 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Configure environment variables
+# Create an app/.env file and add your secret API key:
+echo "API_KEY=your_secret_key" > app/.env
+
 ```
 
 ### Running the App
@@ -73,7 +78,10 @@ Serves the upload form page.
 
 Upload an Excel file and receive its contents as JSON.
 
-**Request:** `multipart/form-data` with a `file` field (`.xls` or `.xlsx`).
+**Request:** 
+- `multipart/form-data` with a `file` field (`.xls` or `.xlsx`).
+- **Header:** `x-api-key` (string, required) containing your secret API key.
+
 
 **Success Response (200):**
 
