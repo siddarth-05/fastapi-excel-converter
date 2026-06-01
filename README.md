@@ -12,7 +12,7 @@ A lightweight web application that converts Excel files (`.xls`, `.xlsx`) to JSO
 ## Project Structure
 
 ```
-LTM/
+fastapi-excel-converter/
 ├── app/
 │   ├── main.py              
 │   ├── routes/
@@ -40,7 +40,7 @@ LTM/
 ```bash
 # Clone the repository
 git clone <repo-url>
-cd LTM
+cd fastapi-excel-converter
 
 # Create and activate a virtual environment
 python -m venv venv

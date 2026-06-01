@@ -1,12 +1,11 @@
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
-API_KEY = os.getenv("API_KEY")
+key = os.getenv("API_KEY")
+def is_valid_api_key(passed_key):
+    if key == passed_key:
+        return True
+    else:
+        return False
 
-def verify(received_key: str) -> bool:
-    """Verify if the received parameter matches the configured API key."""
-    return received_key == API_KEY
-
-# Alias to support different naming preferences
-check_key = verify
+# print(key)
